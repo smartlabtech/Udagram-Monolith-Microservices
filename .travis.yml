@@ -20,10 +20,10 @@ script:
   - docker build -t udagram-api-feed ./udagram-api-feed
   - docker build -t udagram-frontend ./udagram-frontend
 
-  - docker tag simple-node myelias/reverseproxy
-  - docker tag simple-node myelias/udagram-api-user
-  - docker tag simple-node myelias/udagram-api-feed
-  - docker tag simple-node myelias/udagram-frontend
+  - docker tag reverseproxy myelias/reverseproxy
+  - docker tag udagram-api-user myelias/udagram-api-user
+  - docker tag udagram-api-feed myelias/udagram-api-feed
+  - docker tag udagram-frontend myelias/udagram-frontend
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
