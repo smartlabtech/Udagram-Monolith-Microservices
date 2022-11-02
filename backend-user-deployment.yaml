@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: udagram-user-feed
+  labels:
+    app: udagram-user-feed
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: udagram-user-feed
+  template:
+    metadata:
+      labels:
+        app: udagram-user-feed
+    spec:
+      containers:
+      - name: udagram-user-feed
+        image: myelias/udagram-user-feed:latest
+        ports:
+        - containerPort: 80
