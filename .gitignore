@@ -1,4 +1,5 @@
 **/node_modules
+**/www
 set_env.sh
 # env-configmap.yaml
 env-secret.yaml
