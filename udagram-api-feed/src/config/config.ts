@@ -21,7 +21,7 @@ export const config = {
   'dialect': 'postgres',
   'aws_region': 'us-east-1',
   'aws_profile': 'default',
-  'aws_media_bucket': 'arn:aws:s3:::proj3-490209763890-dev',
+  'aws_media_bucket': 'arn:aws:s3:::udagram-927361311096-dev',
   'url': 'http://localhost:8100',
   'jwt': {
     'secret': 'testing',
